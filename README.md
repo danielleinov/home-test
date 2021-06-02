@@ -27,7 +27,7 @@ docker-compose up -d
 $ curl http://localhost:5050/getAllUsersOrders?username=test
 ```
 
-## Add new order to Kafka
+## Add new order 
 
 
 | Method | Path             |
