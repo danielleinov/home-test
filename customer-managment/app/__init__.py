@@ -13,6 +13,7 @@ def create_app():
     json_logging.init_flask()
     json_logging.init_request_instrument(app)
     app.register_blueprint(main_route, url_prefix='/')
-
+    
+    # Consume messages from kafka in background
     Thread(target=customer.consume_write_mongo).start()
     return app
