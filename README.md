@@ -54,6 +54,7 @@ $ curl http://localhost:5050/getAllUsersOrders?username=test
 
 ```bash
 $ curl \
+    --header "Content-Type: application/json" \
     --request POST \
     --data @payload.json \ 
     http://localhost:5050/buy
